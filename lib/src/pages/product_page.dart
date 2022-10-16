@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tutorial_point_learn/widget/product.dart';
-import 'package:tutorial_point_learn/widget/rating_box.dart';
+import 'package:tutorial_point_learn/src/service/Product.dart';
+import 'package:tutorial_point_learn/src/widget/rating_box.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({Key? key, required this.item}) : super(key: key);
