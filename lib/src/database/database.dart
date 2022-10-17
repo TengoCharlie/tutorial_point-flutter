@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'package:flutter/widgets.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
@@ -10,13 +11,13 @@ class SQLiteDbProvider {
   static final SQLiteDbProvider db = SQLiteDbProvider._();
   static Database? _database;
 
-  Future<Database> get database async {
+  Future<Database?> get database async {
     if (_database != null) {
-      return _database!;
+      return _database;
     }
 
     _database = await initDB();
-    return _database!;
+    return _database;
   }
 
   initDB() async {
@@ -25,10 +26,10 @@ class SQLiteDbProvider {
     return await openDatabase(path, version: 1, onOpen: (db) {},
         onCreate: (Database db, int version) async {
       await db.execute("CREATE TABLE Product ("
-          "id INTEGER PRIMARY KEY"
-          "name TEXT"
-          "description TEXT"
-          "price INTEGER"
+          "id INTEGER PRIMARY KEY,"
+          "name TEXT,"
+          "description TEXT,"
+          "price INTEGER,"
           "image TEXT"
           ")");
       await db.execute(

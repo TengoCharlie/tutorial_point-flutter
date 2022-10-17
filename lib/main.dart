@@ -7,6 +7,8 @@ import 'package:tutorial_point_learn/src/service/Product.dart';
 import 'package:tutorial_point_learn/src/widget/product_box_list.dart';
 
 void main() {
+  // Wait for the DB to connect and bind
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp(
       products:
           SQLiteDbProvider.db.getAll("Product", columns: Product.columns)));
