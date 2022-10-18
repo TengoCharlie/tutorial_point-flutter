@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "582113808706",
+    "project_id": "flutter-learn-001",
+    "storage_bucket": "flutter-learn-001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582113808706:android:ac05fc3204288c85e878db",
+        "android_client_info": {
+          "package_name": "com.example.tutorial_point_learn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582113808706-cgiec33qmgr6tpbttbdj0ddqfi7qks3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfT586UXAsvWLO89H_S5qgfxWl3qRINyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582113808706-cgiec33qmgr6tpbttbdj0ddqfi7qks3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
